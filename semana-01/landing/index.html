@@ -1,26 +1,128 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es">    <!--  sirve para declarar el idioma principal de la página web -->
 <head></head>
     <meta charset="UTF-8"> <!-- es para usar  caracteres especiales para q se muestren -->
-    <meta name="viewport"
-content="device-width,
-initial-scale=1.0">
+    <meta name="viewport" content="device-width, initial-scale=1.0"> <!-- ajusta la pantalla -->
     <meta name="descripcion" content="venta de comida rapida en la uleam"> <!-- lo q sale debajo del titulo -->
-    <title> VENTA DE SALCHIPAPA</title>
+    <title> software de facturacion supermercados</title>
 </head>
 <body>
-    <header></header>
-        <nav></nav>
-        <main>
-            <section id="hero"></section>
-            <section id="problema"></section>
-            <section id="solucion"></section>
-            <section id="metricas"></section>
-            <section id="glosario"></section>
-            <section id="faq"></section>
-            <section id="equipo"></section>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#faq">Preguntas</a></li>
+                <li><a href="#equipo">Equipo</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        </main>
-        <footer></footer>
+    <main>
+        <section id="hero">
+            <h1>FacturaManta Pro</h1>
+            <p>La solución de <strong>facturación electrónica</strong> más rápida para los supermercados de Manta.</p>
+            <a href="#faq">Ver preguntas frecuentes</a>
+            <picture>
+                <source srcset="https://media.istockphoto.com/id/636379014/es/foto/manos-la-formaci%C3%B3n-de-una-forma-de-coraz%C3%B3n-con-silueta-al-atardecer.jpg?s=612x612&w=0&k=20&c=R2BE-RgICBnTUjmxB8K9U0wTkNoCKZRi-Jjge8o_OgE=" media="(min-width: 800px)">
+                <source srcset="https://media.istockphoto.com/id/636379014/es/foto/manos-la-formaci%C3%B3n-de-una-forma-de-coraz%C3%B3n-con-silueta-al-atardecer.jpg?s=612x612&w=0&k=20&c=R2BE-RgICBnTUjmxB8K9U0wTkNoCKZRi-Jjge8o_OgE=" media="(max-width: 799px)">
+                <img src="https://media.istockphoto.com/id/636379014/es/foto/manos-la-formaci%C3%B3n-de-una-forma-de-coraz%C3%B3n-con-silueta-al-atardecer.jpg?s=612x612&w=0&k=20&c=R2BE-RgICBnTUjmxB8K9U0wTkNoCKZRi-Jjge8o_OgE=" alt="Interfaz del software de facturación en diferentes dispositivos">
+            </picture>
+        </section>
+
+        <section id="problema">
+            <h2>Problema del Sector</h2>
+            <p>Muchos negocios locales aún dependen de la <mark>facturación física</mark>, lo que causa lentitud en las cajas.</p>
+            <p>El desorden en los registros manuales genera pérdidas económicas y errores contables graves.</p>
+            <blockquote cite="Administrador de supermercado">
+                "Hacer facturas a mano nos quita tiempo valioso y cometemos muchos errores."
+            </blockquote>
+            <cite>— Administrador de una PYME en Manta</cite>
+        </section>
+
+        <section id="solucion">
+            <h2>Nuestra Solución Digital</h2>
+            <p>Automatizamos todo el proceso de cobro y reporte.</p>
+            <article>
+                <h3>Rapidez en Caja</h3>
+                <p>Emisión de comprobantes en menos de 5 segundos.</p>
+            </article>
+            <article>
+                <h3>Reportes SRI</h3>
+                <p>Sincronización automática con la base de datos del gobierno.</p>
+            </article>
+            <article>
+                <h3>Control de Stock</h3>
+                <p>Inventario actualizado al momento de cada venta.</p>
+            </article>
+            
+            <video controls muted width="600">
+                <source src="https://youtu.be/E-DDmIhL4IM?si=D1Eg1ppmvWg4DTnP+" type="video/mp4">
+                Tu navegador no soporta video HTML5.
+            </video>
+        </section>
+
+        <section id="metricas">
+            <h2>Métricas y Proyecciones</h2>
+            <dl>
+                <dt>Usuarios objetivo primer año</dt>
+                <dd><data value="500">500 negocios</data></dd>
+                <dt>Tiempo de ahorro estimado</dt>
+                <dd><data value="7200">2 horas/semana</data></dd>
+                <dt>Mercado potencial local</dt>
+                <dd><data value="30000">USD 30.000</data></dd>
+            </dl>
+            
+        </section>
+
+        <section id="glosario">
+            <h2>Glosario de Términos</h2>
+            <dl>
+                <dt><dfn>Sincronización en la nube</dfn></dt>
+                <dd>Respaldo de datos en servidores externos usando un <abbr title="Software as a Service">SaaS</abbr>.</dd>
+                <dt><dfn>Firma Electrónica</dfn></dt>
+                <dd>Archivo digital que da validez legal a las facturas.</dd>
+                <dt><dfn>SRI</dfn></dt>
+                <dd>Entidad encargada de los impuestos en Ecuador.</dd>
+            </dl>
+        </section>
+
+        <section id="faq">
+            <h2>Preguntas Frecuentes</h2>
+            <details>
+                <summary>¿Quién puede usar esta aplicación?</summary>
+                <p>Cualquier dueño de supermercado o tienda que necesite facturar electrónicamente.</p>
+            </details>
+            <details>
+                <summary>¿Cuánto cuesta el sistema?</summary>
+                <p>Tenemos planes mensuales desde los 20 dólares.</p>
+            </details>
+            <details>
+                <summary>¿Funciona fuera de Manta?</summary>
+                <p>Sí, está disponible para todo el territorio ecuatoriano.</p>
+            </details>
+        </section>
+
+        <section id="equipo">
+            <h2>Nuestro Equipo de Desarrollo</h2>
+            <figure>
+                <img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/9db5/live/48fd9010-c1c1-11ee-9519-97453607d43e.jpg.webp" alt="Foto de Jehu">
+                <figcaption>Jehu - Desarrollador Backend</figcaption>
+            </figure>
+            <figure>
+                <img src="https://wallpapers.com/images/featured/imagenes-lindas-para-perfil-estetico-r521rmfa6ucixtw5.jpg" alt="Foto de Jordan">
+                <figcaption>Jordan - Diseñador de Interfaz</figcaption>
+            </figure>
+            <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-MKjqBrUbY2XxX-8o4J0NVXb2N3jOmf5rNg&s" alt="Foto de Jesús">
+                <figcaption>Jesús - Especialista en Base de Datos</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <address>Contacto: equipo.facturamanta@uleam.edu.ec</address>
+        <p><small>&copy; 2026 FacturaManta Pro - ULEAM</small></p>
+        <p>Fecha de actualización: <time datetime="2026-04-14">14 de abril de 2026</time></p>
+    </footer>
 </body>
 </html>
