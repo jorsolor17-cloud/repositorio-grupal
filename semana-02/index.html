@@ -1,0 +1,117 @@
+<section id="contacto">
+    <h2>Formulario de contacto</h2>
+    <form action="#" method="post" aria-label="Formulario de contacto">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <p>
+                <label for="nombre">Nombre completo: </label>
+                <input type="text" id="nombre" name="nombre" 
+                       required minlength="3" maxlength="60" 
+                       placeholder="Ej: Juan Perez">
+            </p>
+
+
+<p>
+                <label for="email">Correo electronico: </label>
+                <input type="email" id="email" name="email" 
+                       required placeholder="correo@ejemplo.com">
+            </p>
+            <p>
+                <label for="telefono">Telefono:</label>
+                <input type="tel" id="telefono" name="telefono" 
+                       pattern="[0-9]{10}" 
+                       title="Ingresa 10 dígitos sin espacios" 
+                       placeholder="0999999999">
+            </p>
+        </fieldset>
+
+
+    
+
+<fieldset>
+            <legend>Tu mensaje</legend>
+            <p>
+                <label for="asunto">Asunto: </label>
+                <select id="asunto" name="asunto" required>
+                    <option value="">-- Selecciona una opcion </option>
+                    <option value="colaboracion">Propuesta de colaboracion</option>
+                    <option value="trabajo">Oferta de trabajo</option>
+                    <option value="consulta">Consulta general</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </p>
+            <p>
+                <label for="mensaje">Mensaje: </label>
+                <textarea id="mensaje" name="mensaje" 
+                          rows="5" cols="40" 
+                          required minlength="30" 
+                          placeholder="Cuentanos en que podemos ayudarte..."></textarea>
+            </p>
+        </fieldset>
+
+
+
+
+
+<p>
+            <input type="checkbox" id="acepto" name="acepto" required>
+            <label for="acepto">Acepto que se almacenen mis datos.</label>
+        </p>
+
+        <p>
+            <button type="submit">Enviar mensaje</button>
+            <button type="reset">Limpiar</button>
+        </p>
+    </form>
+</section>  
+
+
+
+<section id="habilidades">
+    <h2>Nuestras Habilidades Técnicas</h2>
+    <table>
+        <caption>Cuadro comparativo de competencias del equipo</caption>
+        <thead>
+            <tr>
+                <th scope="col">Categoría</th>
+                <th scope="col">Habilidad</th>
+                <th scope="col">Nivel</th>
+                <th scope="col">Años</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" rowspan="3">Desarrollo Web</th>
+                <td>HTML5</td>
+                <td>Avanzado</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>CSS3</td>
+                <td>Intermedio</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Básico</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <th scope="row" rowspan="2">Backend</th>
+                <td>Java</td>
+                <td>Intermedio</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>SQL</td>
+                <td>Avanzado</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Total de habilidades principales: 5</td>
+            </tr>
+        </tfoot>
+    </table>
+</section>
