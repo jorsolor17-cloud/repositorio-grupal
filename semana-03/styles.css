@@ -1,0 +1,51 @@
+/* ============ RESET UNIVERSAL ============ */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: red;
+    --color-secondary: #64ffda;
+    --color-accent: #ff6b6b;
+    --color-bg: #f5f5f5;
+    --color-text: #222;
+    --color-text-light: #555;
+
+    --font-body: "Segoe UI", Arial, sans-serif;
+
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 32px;
+
+    --radius: 8px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-text);
+}
+
+h1, h2, h3 {
+    color: var(--color-primary);
+    margin-top: 0;
+}
+
+a {
+    color: var(--color-secondary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: var(--color-accent);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
