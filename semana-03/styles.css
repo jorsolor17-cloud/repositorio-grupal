@@ -1,10 +1,9 @@
-/* ============ RESET UNIVERSAL ============ */
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
 :root {
-    --color-primary: red;
+    --color-primary: blue;
     --color-secondary: #64ffda;
     --color-accent: #ff6b6b;
     --color-bg: #f5f5f5;
