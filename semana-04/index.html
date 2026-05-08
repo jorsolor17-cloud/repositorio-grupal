@@ -11,41 +11,42 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <!-- Mi css -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <!-- ============ NAVEGACIÓN ============ -->
-    <nav>
-        <a href="#" class="nav-logo">JuanDev</a>
-        <div class="nav-links">
-        <a href="#about">SOBRE MI</a>
+   <nav class="navbar">
+        <a href="#" class="navbar__logo">JuanDev</a>
+        <div class="navbar__menu">
+        <a href="#about">Sobre mí</a>
         <a href="#skills">Habilidades</a>
-        <a href="#projects">pproyectos</a>
+        <a href="#projects">Proyectos</a>
         <a href="#contact">Contacto</a>
-        </div>
+    </div>
     </nav>
 
     <!-- ============ HERO ============ -->
     <header class="hero">
-        <h1>Noticia</h1>
-        <p>Estudiante de Ingeniería en Software · ULEAM</p>
-        <p>Apasionado por el desarrollo web y las aplicaciones modernas.</p>
+        <h1 class="hero__title">Juan Pérez</h1>
+        <p class="hero__subtitle">Estudiante de Ingeniería en Software · ULEAM</p>
+        <a href="#projects" class="hero__cta">Ver mis proyectos</a>
     </header>
 
     <main>
         
-
+        <div class="container">
         <!-- ============ SOBRE MÍ ============ -->
-        <section id="about">
+        <section id="about" class="section"></section>
             <h2>Sobre mí</h2>
             <p>Soy estudiante de cuarto semestre de Ingeniería en Software en la Universidad Laica Eloy Alfaro de Manabí. Me interesa el desarrollo frontend, la experiencia de usuario y las tecnologías emergentes.</p>
             <p>En mi tiempo libre disfruto aprender nuevas tecnologías, contribuir a proyectos open source y participar en hackathons universitarios.</p>
         </section>
 
         <!-- ============ HABILIDADES (TABLA) ============ -->
-        <section id="skills">
+        <section id="skills"class="section">
             <h2>Habilidades Técnicas</h2>
             <table>
                 <thead>
@@ -103,7 +104,8 @@
                     <li><i class="fa-brands fa-github"></i> GitHub</li>
                 </ul>
             </section>
-
+        </div>
+        
         <!-- ============ PROYECTOS ============ -->
         <section id="projects" class="projects">
             <h2>Mis Proyectos</h2>
