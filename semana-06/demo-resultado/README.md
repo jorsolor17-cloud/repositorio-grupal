@@ -27,7 +27,8 @@ todo lo que se construyó paso a paso en el live coding.
 ## Cómo arrancar
 
 ```bash
-npm install
+cd semana-06/demo-resultado
+npm install # esto se hace en un caso que no lo tengas instalado.
 npm run dev
 ```
 
