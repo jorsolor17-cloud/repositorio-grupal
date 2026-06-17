@@ -1,10 +1,18 @@
 <script lang="ts">
-  // 🟢 PROPS (se definen en clase): productos: Producto[]; onAgregar: (p) => void
+  import type{ Producto} from "./types";
+  let {productos, onAgregar}:{productos: Producto[], onAgregar:(p:Producto)=> void }=$props();
 </script>
 
 <section class="panel">
   <h2>Catálogo</h2>
-  <!-- 🟢 Aquí va el {#each productos as p (p.id)} con el botón Agregar -->
+  <ul class="lista">
+    {#each productos as p (p.id)}
+      <li class ="item">
+        <span class ="nombre">{p.nombre} ${p.precio.toFixed(2)}</span>
+        <button onclick ={() => onAgregar(p)}>Agregar</button>
+      </li>
+    {/each } 
+  </ul>
 </section>
 
 <style>

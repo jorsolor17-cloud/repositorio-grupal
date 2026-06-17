@@ -1,10 +1,32 @@
 <script lang="ts">
-  // 🟢 PROPS (se definen en clase): lineas, subtotal, iva, total
+    import type {LineaFactura} from "./types"
+    let {lineas, subtotal,iva,total}:
+    {lineas:LineaFactura[],subtotal:number,iva:number,total:number}=$props();
+
+    let totalItems = $derived(lineas.reduce((acc, l) => acc + l.cantidad, 0));
 </script>
 
 <section class="panel">
-  <h2>Carrito</h2>
-  <!-- 🟢 Aquí van las líneas con {#each} y el bloque de totales -->
+  <h2>Carrito ({totalItems})</h2>
+    {#if lineas.length === 0}
+      <p>Tu carrito está vacío.</p>
+    {:else}
+      <ul class="lista">
+        {#each lineas as l (l.producto.id)}
+        <li class="item">
+          <span>{l.producto.nombre}</span>
+          <span>{l.cantidad} x ${l.producto.precio.toFixed(2)}=</span>
+          <span> ${(l.producto.precio * l.cantidad).toFixed(2)}</span>
+        </li>
+        {/each}
+      </ul>
+      
+      <div class="totales">
+        <span>Subtotal: ${subtotal.toFixed(2)}</span>
+        <span>IVA: ${iva.toFixed(2)}</span>
+        <span>Total: ${total.toFixed(2)}</span>
+      </div>
+    {/if}
 </section>
 
 <style>
