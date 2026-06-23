@@ -4,9 +4,9 @@ export const sesion = $state({
 });
 
 export function iniciarSesion(nombre: string) {
-  // 🟢 PASO 2: asigna sesion.usuario = nombre
+sesion.usuario = nombre;
 }
 
 export function cerrarSesion() {
-  // 🟢 PASO 2: vuelve sesion.usuario a null
+sesion.usuario = null;
 }

@@ -5,9 +5,9 @@ export const carrito = $state({
 });
 
 export function agregar(producto: Producto) {
-  // 🟢 PASO 3: agrega el producto si no está repetido
+ carrito.items.push (producto);
 }
 
 export function quitar(id: number) {
-  // 🟢 PASO 3: quita el producto cuyo id coincida
+  carrito.items = carrito.items.filter((item) => item.id !== id);
 }
