@@ -1,13 +1,23 @@
-import type { Producto } from './types';
+export interface Producto {
+	id: number;
+	nombre: string;
+	precio: number;
+}
+
+export interface ItemCarrito {
+	producto: Producto;
+	cantidad: number;
+}
 
 export const carrito = $state({
-  items: [] as Producto[],
+	items: [] as ItemCarrito[]
 });
 
 export function agregar(producto: Producto) {
- carrito.items.push (producto);
+	const ya = carrito.items.some(it => it.producto.id === producto.id);
+	if (!ya) carrito.items.push({ producto, cantidad: 1 });
 }
 
 export function quitar(id: number) {
-  carrito.items = carrito.items.filter((item) => item.id !== id);
+	carrito.items = carrito.items.filter(it => it.producto.id !== id);
 }
