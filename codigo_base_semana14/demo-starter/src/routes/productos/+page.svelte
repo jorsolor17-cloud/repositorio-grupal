@@ -1,12 +1,16 @@
 <script lang="ts">
   import { goto } from '$app/navigation';
-  import { productos } from '$lib/data';
   import { agregar } from '$lib/carrito.svelte';
   import { formatearPrecio } from '$lib/calculos';
+
+  let { data } = $props();
+  const productos = $derived(data.productos ?? []);
 </script>
+
 
 <section>
   <h1>Productos</h1>
+  <a href="/productos/nuevo" class="cta">Nuevo producto →</a>
   <ul>
     {#each productos as producto (producto.id)}
       <li>

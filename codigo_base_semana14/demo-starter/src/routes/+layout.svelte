@@ -4,6 +4,9 @@
   import { carrito } from '$lib/carrito.svelte';
 
   let { children } = $props();
+
+  console.log(import.meta.env.VITE_SUPABASE_URL);
+  console.log(import.meta.env.VITE_SUPABASE_KEY);
 </script>
 
 <svelte:head>
